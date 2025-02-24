@@ -1,12 +1,12 @@
 import { twMerge } from "tailwind-merge";
 
-type ElementType = "span" | "div";
+type ElementType = "button" | "div";
 
 type TButtonWrapper<T extends ElementType> = {
   element: T;
   children: React.ReactNode;
   stylization: TButtonWrapperStylization;
-} & (T extends "div" ? React.HTMLProps<HTMLDivElement> : React.HTMLProps<HTMLSpanElement>);
+} & React.ComponentPropsWithoutRef<T>;
 
 export default function ButtonWrapper<T extends ElementType>({ element, children, stylization = { variant: "primary" }, ...props }: TButtonWrapper<T>) {
   const Element = element;
