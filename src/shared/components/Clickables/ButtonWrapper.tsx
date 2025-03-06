@@ -13,7 +13,7 @@ export default function ButtonWrapper<T extends ElementType>({ element, children
   const stylizationResult = buttonWrapperStylization(stylization);
 
   return (
-    <Element {...(props as any)} className={twMerge(" rounded-lg font-medium transition-colors duration-500 ", stylizationResult, props.className)}>
+    <Element {...(props as any)} className={twMerge(" rounded-lg text-center font-medium transition-colors duration-500 ", stylizationResult, props.className)}>
       {children}
     </Element>
   );

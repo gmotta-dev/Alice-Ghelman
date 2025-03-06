@@ -1,4 +1,4 @@
-import Button from "@/shared/components/Button";
+import Button from "@/shared/components/Clickables/Button";
 import ContentWrapper from "@/shared/components/ContentWrapper";
 
 import ParallaxLake from "./ParallaxLake";

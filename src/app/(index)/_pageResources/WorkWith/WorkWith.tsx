@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import ContentWrapper from "@/shared/components/ContentWrapper";
 import { twMerge } from "tailwind-merge";
@@ -29,7 +29,7 @@ type TCard = { name: string; description: string; icon: React.ElementType; class
 
 const Card = (props: TCard) => {
   return (
-    <li className={twMerge("relative flex w-full max-w-[390px] flex-col items-center overflow-hidden rounded-2xl  !bg-nandor-700 py-16", props.className || "")}>
+    <li className={twMerge("relative flex w-full flex-col items-center overflow-hidden rounded-2xl !bg-nandor-700  py-16 lg:max-w-[390px]", props.className || "")}>
       <props.icon />
       <h6 className="text-2xl font-semibold text-nandor-100">{props.name}</h6>
       <p className="text-sm text-nandor-200">{props.description}</p>
@@ -41,6 +41,16 @@ const Card = (props: TCard) => {
 
 const cardsConfig: TCard[] = [
   { name: "Crianças", description: "típicas e atípicas", icon: KidIcon, className: "from-nandor-500/80 bg-gradient-to-r to-nandor-700" },
-  { name: "Adolescentes", description: "típicos e atípicos", icon: TeenIcon, children: <MiddleCardPlants className="absolute inset-0" /> },
+  {
+    name: "Adolescentes",
+    description: "típicos e atípicos",
+    icon: TeenIcon,
+    children: (
+      <Fragment>
+        <MiddleCardPlants className="absolute inset-0" />
+        <MiddleCardPlants className="absolute right-0 top-0 rotate-180" />
+      </Fragment>
+    ),
+  },
   { name: "Adultos", description: "típicos e atípicos", icon: AdultIcon, className: "from-nandor-500/80 bg-gradient-to-l to-nandor-700" },
 ];
