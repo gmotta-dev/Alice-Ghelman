@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <ContentWrapper element="section" className="mt-32 flex flex-wrap items-center justify-center gap-16">
+    <ContentWrapper id="sobre-mim" element="section" className="mt-32 flex flex-wrap items-center justify-center gap-16 lg:justify-between">
       <Image src="/images/alice-xl.webp" alt="Alice" width={410} height={651} className="min-w-0 max-w-[360px] lg:max-w-none" />
       <Text />
     </ContentWrapper>

@@ -6,7 +6,7 @@ import PlantSVG from "./PlantSVG";
 
 export default function Introduction() {
   return (
-    <section className="relative w-full overflow-hidden bg-nandor-700 pt-32">
+    <section id="inicio" className="relative w-full overflow-hidden bg-nandor-700 pt-32">
       <ContentWrapper element="div" className="flex flex-col items-start justify-center md:pb-48 lg:flex-row lg:justify-between lg:pb-[220px]">
         <header className="max-w-[510px] md:max-w-[45%] lg:max-w-[510px]">
           <p className="text-loafer-300">Olá, me chamo</p>

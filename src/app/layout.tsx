@@ -3,7 +3,8 @@ import { Heebo, Inter, Poppins } from "next/font/google";
 
 import "./globals.css";
 
-import Footer from "@/shared/components/Footer";
+import Footer from "./_layout-resources/Footer";
+import Nav from "./_layout-resources/Nav/Nav";
 
 const poppins = Poppins({ variable: "--font-poppins", weight: ["400", "500", "600", "700"], subsets: ["latin"] });
 const heebo = Heebo({ variable: "--font-heebo", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${heebo.variable} ${inter.variable} font-heebo antialiased`}>
+        <Nav />
         {children}
         <Footer />
       </body>

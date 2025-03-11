@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-import AliceLogo from "./AliceLogo";
-import ContentWrapper from "./ContentWrapper";
-import Location from "./Icons/Carbon/Location";
-import LogoInstagram from "./Icons/Carbon/LogoInstagram";
-import LogoLinkedin from "./Icons/Carbon/LogoLinkedin";
-import Mail from "./Icons/Carbon/Mail";
-import Phone from "./Icons/Carbon/Phone";
+import AliceLogo from "../../shared/components/AliceLogo";
+import ContentWrapper from "../../shared/components/ContentWrapper";
+import Location from "../../shared/components/Icons/Carbon/Location";
+import LogoInstagram from "../../shared/components/Icons/Carbon/LogoInstagram";
+import LogoLinkedin from "../../shared/components/Icons/Carbon/LogoLinkedin";
+import Mail from "../../shared/components/Icons/Carbon/Mail";
+import Phone from "../../shared/components/Icons/Carbon/Phone";
 
 export default function Footer() {
   return (

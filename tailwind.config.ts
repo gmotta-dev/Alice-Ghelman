@@ -42,17 +42,30 @@ export default {
           "900": "#2d3431",
           "950": "#171c1a",
         },
+
+        bismark: {
+          "50": "#f4f7f7",
+          "100": "#e3e9ea",
+          "200": "#cad5d7",
+          "300": "#a5b7bb",
+          "400": "#789098",
+          "500": "#5a7179",
+          "600": "#50626a",
+          "700": "#455359",
+          "800": "#3e474c",
+          "900": "#373e42",
+          "950": "#171c1a",
+        },
       },
 
       keyframes: {
-        parallax: {
-          "0%": { transform: "translateZ(0) scale(1.3)" },
-          "100%": { transform: "translateZ(0) scale(1.1)" },
+        "slide-top-bottom": {
+          "0%": { transform: "translate(-50%, -100%)", opacity: "0" },
+          "100%": { transform: "translate(-50%, 0)", opacity: "1" },
         },
       },
-      animation: {
-        parallax: "parallax 4s ease-out forwards",
-      },
+
+      animation: { "slide-top-bottom": "slide-top-bottom .5s ease-in-out forwards" },
     },
   },
   plugins: [],

@@ -11,7 +11,7 @@ import TeenIcon from "./SVGs/TeenIcon";
 
 export default function WorkWith() {
   return (
-    <section className="relative overflow-x-clip pt-32">
+    <section id="atendimento" className="relative overflow-x-clip pt-32">
       <ContentWrapper element="div" className="relative flex flex-col">
         <h2 className="text-5xl font-bold text-nandor-900 md:text-6xl">Atendo</h2>
         <ul className="z-[1] mt-9 flex w-full flex-wrap items-center justify-center gap-6">
