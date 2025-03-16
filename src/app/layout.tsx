@@ -3,6 +3,9 @@ import { Heebo, Inter, Poppins } from "next/font/google";
 
 import "./globals.css";
 
+import PopUpProvider from "@/client/context/PopUpCTX";
+import ToastProvider from "@/client/context/ToastCTX";
+
 import Footer from "./_layout-resources/Footer";
 import Nav from "./_layout-resources/Nav/Nav";
 
@@ -19,8 +22,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${heebo.variable} ${inter.variable} font-heebo antialiased`}>
-        <Nav />
-        {children}
+        <ToastProvider>
+          <PopUpProvider>
+            <Nav />
+            {children}
+          </PopUpProvider>
+        </ToastProvider>
         <Footer />
       </body>
     </html>

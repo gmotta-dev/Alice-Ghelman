@@ -6,7 +6,7 @@ export default function DesktopAnchors() {
   return (
     <div className="hidden items-center gap-9 lg:flex">
       {navAnchors.map((anchor) => (
-        <Link key={anchor.href} href={anchor.href}>
+        <Link key={anchor.href} href={anchor.href} className="transition-opacity hover:opacity-70">
           {anchor.label}
         </Link>
       ))}

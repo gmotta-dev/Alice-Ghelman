@@ -10,7 +10,7 @@ export default function TextInput({ error, ...props }: ComponentProps<"input"> &
         {...props}
         className={twMerge("h-10 rounded-md border border-nandor-200 bg-nandor-100 px-4 text-nandor-600 placeholder:text-nandor-600", props.classNames?.input)}
       />
-      {error && <p className={twMerge("text-red-500", props.classNames?.error)}>{error}</p>}
+      {error && <p className={twMerge("text-sm text-red-500", props.classNames?.error)}>{error}</p>}
     </div>
   );
 }

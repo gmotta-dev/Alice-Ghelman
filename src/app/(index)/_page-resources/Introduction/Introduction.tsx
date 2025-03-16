@@ -1,4 +1,5 @@
 import Button from "@/shared/components/Clickables/Button";
+import CustomLink from "@/shared/components/Clickables/Link";
 import ContentWrapper from "@/shared/components/ContentWrapper";
 
 import ParallaxLake from "./ParallaxLake";
@@ -12,9 +13,9 @@ export default function Introduction() {
           <p className="text-loafer-300">Olá, me chamo</p>
           <h1 className="mt-2 font-poppins text-6xl text-nandor-50 min-[1300px]:text-9xl">Alice Martins  Ghelman</h1>
           <p className="mt-2 text-nandor-200">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur.</p>
-          <Button className="mt-6 w-full max-w-[288px] md:mt-9" stylization={{ variant: "secondary" }}>
+          <CustomLink href="#contato" className="mt-6 block w-full max-w-[288px] md:mt-9" stylization={{ variant: "secondary" }}>
             Agendar consulta
-          </Button>
+          </CustomLink>
         </header>
 
         <ParallaxLake />

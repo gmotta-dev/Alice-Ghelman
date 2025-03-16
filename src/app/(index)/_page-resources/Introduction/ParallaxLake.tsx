@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-import { useMediaQuery } from "@/client/useMediaQuery";
+import { useMediaQuery } from "@/client/hooks/useMediaQuery";
 import Image from "next/image";
 
 export default function ParallaxLake() {
@@ -27,9 +27,9 @@ export default function ParallaxLake() {
       ref={parallaxRef}
       src="/images/lago.webp"
       alt="Lago background"
-      width={720}
-      height={760}
-      className="right-0 top-20 mt-12 h-full rounded-t-[56px] bg-cover bg-bottom object-cover md:absolute md:max-w-[45%] lg:top-0 lg:mt-32 lg:rounded-tl-[56px]"
+      width={690}
+      height={664}
+      className="right-0 top-16 mt-12 h-full max-h-[780px] rounded-t-[56px] bg-cover bg-bottom object-cover md:absolute md:max-w-[45%] lg:top-0 lg:mt-32 lg:rounded-tl-[56px]"
     />
   );
 }

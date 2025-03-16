@@ -7,7 +7,7 @@ import ExpPlant from "./ExpPlant";
 
 export default function ExperienceWith() {
   return (
-    <ContentWrapper element="section" className="mt-32">
+    <ContentWrapper id="experiencia" element="section" className="mt-32">
       <h5 className="text-5xl font-bold text-nandor-900 md:text-6xl">Experiência com</h5>
       <div className="relative mt-8 flex flex-wrap items-center justify-between overflow-hidden rounded-[36px] bg-loafer-300 px-5 py-12 md:items-start md:px-9 md:py-28">
         <ExpPlant />

@@ -9,7 +9,7 @@ import FAQPlant from "./FAQPlant";
 
 export default function FAQ() {
   return (
-    <section className="relative overflow-hidden">
+    <section id="faq" className="relative overflow-hidden">
       <FAQPlant className="absolute left-10 top-0 hidden min-[1300px]:block" />
       <ContentWrapper element="div" className="my-32 max-w-[700px]">
         <h3 className="text-center text-5xl text-nandor-900 md:text-6xl lg:text-8xl">Dúvidas frequentes</h3>
