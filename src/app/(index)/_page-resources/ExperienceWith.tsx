@@ -1,25 +1,19 @@
-import Button from "@/shared/components/Clickables/Button";
+import Banner from "@/shared/components/Banner/Banner";
 import ContentWrapper from "@/shared/components/ContentWrapper";
 import CheckMarkFilled from "@/shared/components/Icons/Carbon/CheckMarkFilled";
 import { twMerge } from "tailwind-merge";
-
-import ExpPlant from "./ExpPlant";
 
 export default function ExperienceWith() {
   return (
     <ContentWrapper id="experiencia" element="section" className="mt-32">
       <h5 className="text-5xl font-bold text-nandor-900 md:text-6xl">Experiência com</h5>
-      <div className="relative mt-8 flex flex-wrap items-center justify-between overflow-hidden rounded-[36px] bg-loafer-300 px-5 py-12 md:items-start md:px-9 md:py-28">
-        <ExpPlant />
+      <Banner stylization="secondary" href="#contato">
         <ul className="z-[1] grid max-w-[652px] gap-3 md:grid-cols-2">
           {texts.map((i, key) => (
             <Item key={key} text={i} className={key === 3 ? "mt-10 md:mt-0" : ""} />
           ))}
         </ul>
-        <Button stylization={{ variant: "primary", size: "md" }} className="z-[1] mx-auto mt-10 w-full max-w-[264px] md:mx-0">
-          Agendar consulta
-        </Button>
-      </div>
+      </Banner>
     </ContentWrapper>
   );
 }
