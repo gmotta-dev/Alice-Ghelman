@@ -8,4 +8,4 @@ export default function ContentWrapper({ componentRef, ...props }: TContentWrapp
   );
 }
 
-export type TContentWrapper = { element: "div" | "section" | "nav"; componentRef?: any } & HTMLAttributes<HTMLDivElement>;
+export type TContentWrapper = { element: "div" | "section" | "nav" | "article"; componentRef?: any } & HTMLAttributes<HTMLDivElement>;

@@ -6,14 +6,22 @@ type TButtonWrapper<T extends ElementType> = {
   element: T;
   children: React.ReactNode;
   stylization: TButtonWrapperStylization;
+  disabled?: boolean;
 } & React.ComponentPropsWithoutRef<T>;
 
-export default function ButtonWrapper<T extends ElementType>({ element, children, stylization = { variant: "primary" }, ...props }: TButtonWrapper<T>) {
+export default function ButtonWrapper<T extends ElementType>({ element, children, stylization = { variant: "primary" }, disabled, ...props }: TButtonWrapper<T>) {
   const Element = element;
   const stylizationResult = buttonWrapperStylization(stylization);
 
   return (
-    <Element {...(props as any)} className={twMerge(" rounded-lg text-center font-medium transition-colors duration-500 ", stylizationResult, props.className)}>
+    <Element
+      {...(props as any)}
+      className={twMerge(
+        " rounded-lg text-center font-medium transition-colors duration-500 ",
+        disabled ? "cursor-not-allowed opacity-50" : "",
+        stylizationResult,
+        props.className,
+      )}>
       {children}
     </Element>
   );

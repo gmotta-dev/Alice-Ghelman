@@ -1,37 +1,33 @@
+import { TArticle } from "@/app/blog/_path-resources/articles-data";
 import Image from "next/image";
 import Link from "next/link";
 
 import ArrowRight from "../Icons/Carbon/ArrowRight";
 import CurveSVG from "./CurveSVG";
 
-export default function ArticleGroup(props: { classNames?: Partial<Record<"container", string>> }) {
+export default function ArticleGroup(props: { classNames?: Partial<Record<"container", string>>; articles: (TArticle | undefined)[] }) {
+  const article1 = props.articles[0];
+  const article2 = props.articles[1];
+  const article3 = props.articles[2];
+
   return (
     <div className={`flex flex-col items-center gap-6 md:flex-row ${props.classNames?.container}`}>
-      <Article
-        image="/images/artigo-1.png"
-        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
-        link="https://www.google.com"
-        stylization={{ orientation: "portrait" }}
-      />
+      {article1 && (
+        <Article image={article1.image} title={article1.title_lg} link={"/blog/artigos/" + article1.slug} stylization={{ orientation: "portrait" }} tag={article1.tag} />
+      )}
       <div className="flex flex-col gap-6">
-        <Article
-          image="/images/artigo-1.png"
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
-          link="https://www.google.com"
-          stylization={{ orientation: "landscape" }}
-        />
-        <Article
-          image="/images/artigo-1.png"
-          title="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"
-          link="https://www.google.com"
-          stylization={{ orientation: "landscape" }}
-        />
+        {article2 && (
+          <Article image={article2.image} title={article2.title_lg} link={"/blog/artigos/" + article2.slug} stylization={{ orientation: "landscape" }} tag={article2.tag} />
+        )}
+        {article3 && (
+          <Article image={article3.image} title={article3.title_lg} link={"/blog/artigos/" + article3.slug} stylization={{ orientation: "landscape" }} tag={article3.tag} />
+        )}
       </div>
     </div>
   );
 }
 
-const Article = (props: { image: string; title: string; link: string; stylization: TArticleStylization }) => {
+const Article = (props: { image: string; title: string; link: string; stylization: TArticleStylization; tag: string }) => {
   const stylization = articleStylization(props.stylization);
 
   return (
@@ -43,11 +39,13 @@ const Article = (props: { image: string; title: string; link: string; stylizatio
         height={stylization.image.height}
         className={`${stylization.classNames.image} rounded-2xl object-cover transition-transform duration-300 group-hover/article:scale-[1.02]`}
       />
-      <button className="absolute right-4 top-4 z-10 flex min-h-8 min-w-8 items-center justify-center rounded-full bg-loafer-950">
-        <ArrowRight className="min-h-4 min-w-4 -rotate-45 text-loafer-400 transition-transform duration-300 group-hover/article:rotate-0" />
-      </button>
-      <div
-        className={`absolute bottom-0 left-0 right-0 flex h-[120px] w-full items-center justify-center gap-4 bg-neutral-50 p-4 min-[460px]:rounded-tr-2xl ${stylization.classNames["text-wrapper"]}`}>
+      <div className="absolute left-0 top-4 flex w-full items-center justify-between px-4">
+        <span className="inline-block rounded-[4px] bg-white p-2 text-sm font-medium text-loafer-900">{props.tag}</span>
+        <button className=" z-10 flex min-h-8 min-w-8 items-center justify-center rounded-full bg-white">
+          <ArrowRight className="min-h-4 min-w-4 -rotate-45 text-loafer-900 transition-transform duration-300 group-hover/article:rotate-0" />
+        </button>
+      </div>
+      <div className={`absolute bottom-0 left-0 right-0 flex h-[120px] w-full gap-4 bg-neutral-50 p-4 min-[460px]:rounded-tr-2xl ${stylization.classNames["text-wrapper"]}`}>
         <CurveSVG className="absolute -left-[1px] top-1 hidden -translate-y-full min-[460px]:block" />
         <p className="line-clamp-3 font-medium text-nandor-800 md:text-lg">{props.title}</p>
 

@@ -1,0 +1,25 @@
+.article {
+  h2 {
+    @apply text-2xl font-bold text-neutral-900;
+  }
+
+  h3 {
+    @apply text-xl font-semibold text-neutral-900;
+  }
+
+  h4 {
+    @apply text-lg font-medium text-neutral-900;
+  }
+
+  p {
+    @apply text-neutral-800;
+  }
+
+  ol {
+    @apply list-decimal pl-4;
+  }
+
+  ul {
+    @apply list-disc pl-4;
+  }
+}
