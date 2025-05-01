@@ -17,10 +17,10 @@ export const articlesData: TArticle[] = [
     created_at: "2024-03-25",
     description:
       "Você sabe o que Atípico quer dizer? No dicionário, por definição, a palavra atípico diz respeito a tudo aquilo que foge ao típico, ao normal, ao comum. Na psicologia que eu sigo, atípico também é isso, mas é um pouco mais, quer dizer aquela pessoa que foge à norma.",
-    image: "/images/blog/pessoas-atipicas.jpg",
+    image: "/images/blog/pessoas-atipicas.webp",
     tag: "PSICOLOGIA",
     mdx: `
-    Você sabe o que Atípico quer dizer? 
+    ## Você sabe o que Atípico quer dizer? 
 
 No dicionário, por definição, a palavra atípico diz respeito a tudo aquilo que foge ao típico, ao normal, ao comum. Na psicologia que eu sigo, atípico também é isso, mas é um pouco mais, quer dizer aquela pessoa que foge à norma. 
 
@@ -36,54 +36,9 @@ Esses podem ser os indivíduos com esquizofrenia, com transtornos de humor, como
 
 Eu atendo todas elas. 
 
-No entanto, podemos perceber que essa definição "qualquer quadro que não seja considerado normal" pode ser um grande problema quando começamos a questionar o que é considerado como normal. Esse debate, importantíssmo e caro à psicologia e psicanálise ética, é o tema do nosso próximo texto: Isso é coisa de gente normal? (hiperlink)
-    `,
-  },
-  {
-    slug: "isso-e-coisa-de-gente-normal",
-    title: "Isso é coisa de gente normal?",
-    title_lg: "Isso é coisa de gente normal? Questionando padrões sociais",
-    created_at: "2024-03-24",
-    description: "Você pode já ter se perguntado se um comportamento ou atitude suas são coisa de gente normal. É uma dúvida muito mais comum do que vocês possam imaginar.",
-    image: "/images/blog/coisa-de-gente-normal.jpg",
-    tag: "PSICOLOGIA SOCIAL",
-    mdx: `
-Você pode já ter se perguntado se um comportamento ou atitude suas são coisa de gente normal. É uma dúvida muito mais comum do que vocês possam imaginar.
+<br />
 
-Essa pergunta passou a ser mais frequente ainda conforme os diagnósticos psiquiátricos foram sendo compartilhados nas redes sociais. Seja em formato de reels no Instagram e no Tiktok ou em formato de texto no Google, o fato é que a informação ficou difusa e banalizada. 
-
-Isto é, os termos que antes eram mais conhecidos por médicos, psicólogos, agentes e trabalhadores da saúde, passaram a fazer parte do vocabulário de todas as pessoas. O que de todo não é mal, pois o conhecimento é libertador. 
-
-O que acontece é que ao invés de justamente libertar os indivíduos, acabamos vendo um movimento contrário de aprisionamento a diagnósticos a todo e qualquer custo. Acabamos por ver pessoas que não sentiam necessidade de serem medicalizados procurarem profissionais em busca de remédios para trabalhar mais, se concentrar mais, produzir mais. 
-
-É que na sociedade em que vivemos, o normal é visto a partir do ponto de vista do grupo dominante. E o que os burgueses, que são o grupo dominante, querem se não a produção em massa e a mais valia?
-
-Nessa lógica, se pensarmos em termos sociológicos, o que é normal é definitivo por aqueles que, em sua origem, têm um perfil de cor e gênero muito bem definidos.
-
-Já viu né? "Qualquer coisa que não seja normal", na visão da sociedade pode incluir direta ou inderatamente todos os grupos marginalizados e suas diferentes formas de viver. 
-
-Isso pode parecer exagerado ou desmedido, mas é um fato que já aconteceu aqui, na história do Brasil, durante o período dos manicômios psiquiátricos. Além dos pacientes com transtornos psiquiátricos, que também não deveriam ser excluídos e mal tratados da forma que eram nesses espaços, também eram internadas  mulheres, pessoas negras, não binárias, da comunidade lgbtqia+, deficientes físicos, ciganos, artistas e todo grupo de pessoas que não seguissem a norma estabelecida.
-
-Digo tudo isso para entendermos que, para uma psicologia e psicanálise éticas, os critérios de normalidade devem ser outros. Mais sutis, mais individuais. Por exemplo, ser saudável é muito mais importante do que ser normal. 
- 
-
-No entanto, o que é "ser saudável" também não é uma resposta tão fácil assim. Na visão de um psicanalista que gosto muito, Winnicott, os critérios para definir a saúde devem ser tênues e cuidadosos.
-
-Ele diz em seu texto O conceito de indivíduo saudável (1967) que ser um adulto saudável é ter a capacidade de se identificar com a sociedade sem perder muito do seu impulso individual. 
-
-Em suas palavras, "é claro que deve existir alguma perda, relativa ao controle do impulso, mas não é nada normal uma identificação extrema com a sociedade acompanhada da perda total do senso de self, e da autovalorização".
-
-O que quer dizer que não é nada saudável ir em direção à normalidade excessiva. Normalidade essa que demanda a cobertura de todas as expectativas de uma sociedade que é cisheteronormativa, branca e ocidental.
-
-Para completar o que penso e defendo, destaco o que esse psicanalista afirma; "a vida de um indivíduo saudável é caracterizada tanto por medos, sentimentos conflituosos, dúvidas e frustrações como por características positivas (...), o principal é que sintam que estão vivendo a própria vida, assumindo responsabilidade pela ação ou pela inatividade, e sejam capazes de assumir o crédito pelo sucesso e a culpa pelas falhas".
-
-E continua: "A saúde não está associada à negação de alguma coisa (...), a saúde tem relação com o viver, com a saúde interior e, de modo diverso, com a capacidade de vivenciar experiências culturais". 
-
-Por isso, digo que saúde é nunca parar de se desenvolver emocional e socialmente. E realmemte ninguém pode dizer que isso é uma tarefa fácil. Muito menos dizer que saúde é sinônimo de ausência de sofrimento. 
-
-O que podemos dizer é que ela, a saúde, é tolerante a doença e tem muito a aprender ao manter contato com a (nossa) loucura.
-
-Portanto, nada melhor do que ir de encontro às nossas partes que não são tão normais assim e conviver com elas da maneira mais equilibrada possível. 
+No entanto, podemos perceber que essa definição "qualquer quadro que não seja considerado normal" pode ser um grande problema quando começamos a questionar o que é considerado como normal. Esse debate, importantíssmo e caro à psicologia e psicanálise ética, é o tema do nosso próximo texto: Isso é coisa de gente normal?
     `,
   },
 
@@ -94,7 +49,7 @@ Portanto, nada melhor do que ir de encontro às nossas partes que não são tão
     created_at: "2024-03-23",
     description:
       "Para quem não está familiarizado com esse tema, pode ser que criança fazer terapia não seja algo normal, comum. Pode ser que essa possibilidade seja vista como estranha, não natural, 'o que é que uma criança vai falar na terapia?'",
-    image: "/images/blog/crianca-faz-terapia.jpg",
+    image: "/images/blog/crianca-faz-terapia.webp",
     tag: "PSICOLOGIA",
     mdx: `
     Criança faz terapia? 
@@ -130,7 +85,7 @@ Agora você deve estar pensando, tá, mas como? Realmente, no atendimento com cr
 
 O psicanalista Winnicott nos ensinou que o brincar é a língua da criança. Ou seja, é através dele que elas podem expressar e elaborar os acontecimentos de sua vida externa e interna, suas fantasias, seus medos e seus desejos futuros. 
 
-Na psicanálise com crianças, ao invés de solicitar que elas associem livremente - termo psicanalítico que pode ser encontrado no texto Porque psicanálise? (hiperlink) - solicitaremos que elas brinquem. A partir das brincadeiras, ou da falta delas, poderemos adentrar suas vivências e conversar com elas, de modo que o que antes não estava sendo compreendido, possa agora ser.
+Na psicanálise com crianças, ao invés de solicitar que elas associem livremente - termo psicanalítico que pode ser encontrado no texto Porque psicanálise? - solicitaremos que elas brinquem. A partir das brincadeiras, ou da falta delas, poderemos adentrar suas vivências e conversar com elas, de modo que o que antes não estava sendo compreendido, possa agora ser.
 
 É um trabalho difícil de ser colocado em palavras já que usa outros meios de comunicação. No entanto, vale reafirmar que esse mesmo trabalho pode ser feito com bebês recém-nascidos exatamente por usar de outra linguagem, outra comunicação. E bebês se comunicam muito. 
 
@@ -148,8 +103,54 @@ Outro ponto importante é que o atendimento com crianças implica sessões parti
 Por fim, deve ficar claro que as crianças não só percebem tudo, como criam respostas fantasiosas para as perguntas não respondidas e, na maioria das vezes, sofrem com elas. Se perceber qualquer diferença no comportamento do seu pequeno que o preocupe ou o tire do sério (outra forma deles pedirem ajuda), entre em contato! 
 
 Estarei disponível para criar uma relação de confiança com vocês e as crianças. Só assim o trabalho pode ser feito! 
+    `,
+  },
 
-    
+  {
+    slug: "isso-e-coisa-de-gente-normal",
+    title: "Isso é coisa de gente normal?",
+    title_lg: "Isso é coisa de gente normal? Questionando padrões sociais",
+    created_at: "2024-03-24",
+    description: "Você pode já ter se perguntado se um comportamento ou atitude suas são coisa de gente normal. É uma dúvida muito mais comum do que vocês possam imaginar.",
+    image: "/images/blog/coisa-de-gente-normal.webp",
+    tag: "PSICOLOGIA SOCIAL",
+    mdx: `
+Você pode já ter se perguntado se um comportamento ou atitude suas são coisa de gente normal. É uma dúvida muito mais comum do que vocês possam imaginar.
+
+Essa pergunta passou a ser mais frequente ainda conforme os diagnósticos psiquiátricos foram sendo compartilhados nas redes sociais. Seja em formato de reels no Instagram e no Tiktok ou em formato de texto no Google, o fato é que a informação ficou difusa e banalizada. 
+
+Isto é, os termos que antes eram mais conhecidos por médicos, psicólogos, agentes e trabalhadores da saúde, passaram a fazer parte do vocabulário de todas as pessoas. O que de todo não é mal, pois o conhecimento é libertador. 
+
+O que acontece é que ao invés de justamente libertar os indivíduos, acabamos vendo um movimento contrário de aprisionamento a diagnósticos a todo e qualquer custo. Acabamos por ver pessoas que não sentiam necessidade de serem medicalizados procurarem profissionais em busca de remédios para trabalhar mais, se concentrar mais, produzir mais. 
+
+É que na sociedade em que vivemos, o normal é visto a partir do ponto de vista do grupo dominante. E o que os burgueses, que são o grupo dominante, querem se não a produção em massa e a mais valia?
+
+Nessa lógica, se pensarmos em termos sociológicos, o que é normal é definitivo por aqueles que, em sua origem, têm um perfil de cor e gênero muito bem definidos.
+
+Já viu né? "Qualquer coisa que não seja normal", na visão da sociedade pode incluir direta ou inderatamente todos os grupos marginalizados e suas diferentes formas de viver. 
+
+Isso pode parecer exagerado ou desmedido, mas é um fato que já aconteceu aqui, na história do Brasil, durante o período dos manicômios psiquiátricos. Além dos pacientes com transtornos psiquiátricos, que também não deveriam ser excluídos e mal tratados da forma que eram nesses espaços, também eram internadas  mulheres, pessoas negras, não binárias, da comunidade LGBTQIPN+, deficientes físicos, ciganos, artistas e todo grupo de pessoas que não seguissem a norma estabelecida.
+
+Digo tudo isso para entendermos que, para uma psicologia e psicanálise éticas, os critérios de normalidade devem ser outros. Mais sutis, mais individuais. Por exemplo, ser saudável é muito mais importante do que ser normal. 
+ 
+
+No entanto, o que é "ser saudável" também não é uma resposta tão fácil assim. Na visão de um psicanalista que gosto muito, Winnicott, os critérios para definir a saúde devem ser tênues e cuidadosos.
+
+Ele diz em seu texto O conceito de indivíduo saudável (1967) que ser um adulto saudável é ter a capacidade de se identificar com a sociedade sem perder muito do seu impulso individual. 
+
+Em suas palavras, "é claro que deve existir alguma perda, relativa ao controle do impulso, mas não é nada normal uma identificação extrema com a sociedade acompanhada da perda total do senso de self, e da autovalorização".
+
+O que quer dizer que não é nada saudável ir em direção à normalidade excessiva. Normalidade essa que demanda a cobertura de todas as expectativas de uma sociedade que é cisheteronormativa, branca e ocidental.
+
+Para completar o que penso e defendo, destaco o que esse psicanalista afirma; "a vida de um indivíduo saudável é caracterizada tanto por medos, sentimentos conflituosos, dúvidas e frustrações como por características positivas (...), o principal é que sintam que estão vivendo a própria vida, assumindo responsabilidade pela ação ou pela inatividade, e sejam capazes de assumir o crédito pelo sucesso e a culpa pelas falhas".
+
+E continua: "A saúde não está associada à negação de alguma coisa (...), a saúde tem relação com o viver, com a saúde interior e, de modo diverso, com a capacidade de vivenciar experiências culturais". 
+
+Por isso, digo que saúde é nunca parar de se desenvolver emocional e socialmente. E realmemte ninguém pode dizer que isso é uma tarefa fácil. Muito menos dizer que saúde é sinônimo de ausência de sofrimento. 
+
+O que podemos dizer é que ela, a saúde, é tolerante a doença e tem muito a aprender ao manter contato com a (nossa) loucura.
+
+Portanto, nada melhor do que ir de encontro às nossas partes que não são tão normais assim e conviver com elas da maneira mais equilibrada possível. 
     `,
   },
 ];

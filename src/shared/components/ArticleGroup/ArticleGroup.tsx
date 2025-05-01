@@ -37,7 +37,7 @@ const Article = (props: { image: string; title: string; link: string; stylizatio
         alt="artigo-1"
         width={stylization.image.width}
         height={stylization.image.height}
-        className={`${stylization.classNames.image} rounded-2xl object-cover transition-transform duration-300 group-hover/article:scale-[1.02]`}
+        className={`${stylization.classNames.image} rounded-2xl object-cover object-center transition-transform duration-300 group-hover/article:scale-[1.02]`}
       />
       <div className="absolute left-0 top-4 flex w-full items-center justify-between px-4">
         <span className="inline-block rounded-[4px] bg-white p-2 text-sm font-medium text-loafer-900">{props.tag}</span>

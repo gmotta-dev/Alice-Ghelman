@@ -17,7 +17,7 @@ export default function AliceBanner() {
 
             <span className="mb-4 flex max-w-[489px] items-center justify-between gap-6 text-nandor-200 lg:mb-0">
               <Quotes className="mb-auto min-h-6 min-w-6 md:min-h-8 md:min-w-8" />
-              <span className="max-w-[370px] py-2 text-lg font-medium md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed sit amet, consectetur</span>
+              <span className="max-w-[370px] py-2 text-lg font-medium md:text-xl">Juntos podemos encontrar uma versão de si que faça mais sentido para você.</span>
               <Quotes className="mt-auto min-h-6 min-w-6 md:min-h-8 md:min-w-8" />
             </span>
           </div>

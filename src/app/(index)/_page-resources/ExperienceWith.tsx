@@ -21,7 +21,7 @@ export default function ExperienceWith() {
 const texts = [
   "Crianças com autismo",
   "Clínica racializada",
-  "Público Lgbtqia+",
+  "Público LGBTQIPN+",
   "Transtorno do espectro autista em todas as idade",
   "Pessoas com deficiência",
   "Transtorno dissociativo de identidade",

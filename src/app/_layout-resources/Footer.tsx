@@ -1,3 +1,4 @@
+import LogoWhatsapp from "@/shared/components/Icons/LogoWhatsapp";
 import Link from "next/link";
 
 import AliceLogo from "../../shared/components/AliceLogo";
@@ -13,11 +14,11 @@ export default function Footer() {
     <footer className="bg-nandor-700">
       <ContentWrapper element="div" className="flex flex-col justify-between gap-4 py-16 lg:flex-row lg:flex-wrap lg:items-center lg:py-20">
         <AliceLogo className="h-[128px] w-[128px] text-nandor-300 lg:h-[256px] lg:w-[256px]" />
-        <div className="mt-16 flex w-full max-w-[700px] flex-col gap-8 md:mt-28 md:flex-row lg:mt-0">
+        <div className="mt-16 flex w-full max-w-[700px] flex-col gap-16 md:mt-28 md:flex-row lg:mt-0 lg:justify-end">
           <Info name="Contato" items={contactGroup} />
           <Info name="Redes Sociais" items={socialGroup} />
         </div>
-        <small className="w-full text-center text-nandor-400">©2024 Alice Ghelman. Todos os direitos reservados</small>
+        <small className="mt-8 w-full text-center text-nandor-400 md:mt-0">©2025 Alice Ghelman. Todos os direitos reservados</small>
       </ContentWrapper>
     </footer>
   );
@@ -48,10 +49,8 @@ const Info = (props: { name: string; items: InfoItem[] }) => {
 };
 
 const contactGroup: InfoItem[] = [
-  { type: "link", href: "aliceghelman@gmail.com", label: "aliceghelman@gmail.com", icon: Mail },
-  { type: "link", href: "https://wa.me/5521942464416", label: "021 94246-4416 ", icon: Phone },
-  { type: "span", label: "Rua Doutor Borman n⁰ 23, Centro, Niterói", icon: Location },
-  { type: "span", label: "Rua Desembargador Izidro nº 18, Tijuca, Rio de Janeiro", icon: Location },
+  { type: "link", href: "mailto:psialiceghelman@gmail.com", label: "psialiceghelman@gmail.com", icon: Mail },
+  { type: "link", href: "https://wa.me/+5521976610030", label: "21 97661-0030", icon: LogoWhatsapp },
 ];
 
 const socialGroup: InfoItem[] = [

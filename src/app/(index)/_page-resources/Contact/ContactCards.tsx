@@ -1,8 +1,6 @@
-import { ComponentProps } from "react";
-
 import Location from "@/shared/components/Icons/Carbon/Location";
 import Mail from "@/shared/components/Icons/Carbon/Mail";
-import Phone from "@/shared/components/Icons/Carbon/Phone";
+import LogoWhatsapp from "@/shared/components/Icons/LogoWhatsapp";
 import { twMerge } from "tailwind-merge";
 
 export default function ContactCards() {
@@ -10,16 +8,16 @@ export default function ContactCards() {
     <ul className="flex w-full flex-wrap gap-4 lg:max-w-[607px]">
       <Card
         element="link"
-        href="mailto:aliceghelman@gmail.com"
+        href="mailto:psialiceghelman@gmail.com"
         icon={Mail}
-        texts={["aliceghelman@gmail.com"]}
-        className="bg-bismark-300 text-bismark-600 hover:bg-bismark-200 w-full rounded-b-xl rounded-t-[32px] lg:max-w-[356px] lg:rounded-tr-xl"
+        texts={["psialiceghelman@gmail.com"]}
+        className="w-full rounded-b-xl rounded-t-[32px] bg-bismark-300 text-bismark-600 hover:bg-bismark-200 lg:max-w-[356px] lg:rounded-tr-xl"
       />
       <Card
         element="link"
-        href="tel:+5521942464416"
-        icon={Phone}
-        texts={["021 94246-4416"]}
+        href="https://wa.me/+5521976610030"
+        icon={LogoWhatsapp}
+        texts={["21 97661-0030"]}
         className="w-full rounded-xl bg-nandor-700 text-nandor-200 hover:bg-nandor-600 lg:flex-1 lg:rounded-tr-[32px]"
       />
       <Card
