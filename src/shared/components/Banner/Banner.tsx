@@ -18,7 +18,7 @@ export default function Banner(props: { children: ReactNode; stylization: TBanne
       <ExpPlant className={stylization["plant-fill"]} />
       {props.children}
       <CustomLink href={props.href} stylization={{ variant: stylization.button, size: "md" }} className="z-[1] mx-auto mt-10 w-full max-w-[264px] md:m-0">
-        Vamos?
+        Agendar sessão
       </CustomLink>
     </div>
   );

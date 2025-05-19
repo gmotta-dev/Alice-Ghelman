@@ -3,11 +3,9 @@ import Link from "next/link";
 
 import AliceLogo from "../../shared/components/AliceLogo";
 import ContentWrapper from "../../shared/components/ContentWrapper";
-import Location from "../../shared/components/Icons/Carbon/Location";
 import LogoInstagram from "../../shared/components/Icons/Carbon/LogoInstagram";
 import LogoLinkedin from "../../shared/components/Icons/Carbon/LogoLinkedin";
 import Mail from "../../shared/components/Icons/Carbon/Mail";
-import Phone from "../../shared/components/Icons/Carbon/Phone";
 
 export default function Footer() {
   return (
@@ -55,5 +53,5 @@ const contactGroup: InfoItem[] = [
 
 const socialGroup: InfoItem[] = [
   { type: "link", href: "https://www.instagram.com/pensandoopsiquismo/", label: "pensandoopsiquismo", icon: LogoInstagram },
-  { type: "link", href: "https://www.linkedin.com/in/aliceghelman/", label: "Alice_Ghelman99", icon: LogoLinkedin },
+  { type: "link", href: "https://www.linkedin.com/in/alice-martins-ghelman-9647241b0/", label: "Alice Martins Ghelman", icon: LogoLinkedin },
 ];

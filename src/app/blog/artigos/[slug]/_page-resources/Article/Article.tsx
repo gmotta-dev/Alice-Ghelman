@@ -21,7 +21,7 @@ export default function Article(props: TNextPageProps) {
 
   return (
     <Suspense fallback="">
-      <ContentWrapper element="article" className={twMerge("my-6 flex max-w-[1064px] flex-col gap-6 font-inter", styles.article)}>
+      <ContentWrapper element="article" className={twMerge("my-6 flex max-w-[1064px] flex-col gap-6 text-justify font-inter", styles.article)}>
         <AsyncElement />
       </ContentWrapper>
     </Suspense>

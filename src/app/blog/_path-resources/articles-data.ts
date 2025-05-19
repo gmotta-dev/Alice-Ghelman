@@ -17,7 +17,7 @@ export const articlesData: TArticle[] = [
     created_at: "2024-03-25",
     description:
       "Você sabe o que Atípico quer dizer? No dicionário, por definição, a palavra atípico diz respeito a tudo aquilo que foge ao típico, ao normal, ao comum. Na psicologia que eu sigo, atípico também é isso, mas é um pouco mais, quer dizer aquela pessoa que foge à norma.",
-    image: "/images/blog/pessoas-atipicas.webp",
+    image: "/images/blog/coisa-de-gente-normal.webp",
     tag: "PSICOLOGIA",
     mdx: `
     ## Você sabe o que Atípico quer dizer? 
@@ -112,7 +112,7 @@ Estarei disponível para criar uma relação de confiança com vocês e as crian
     title_lg: "Isso é coisa de gente normal? Questionando padrões sociais",
     created_at: "2024-03-24",
     description: "Você pode já ter se perguntado se um comportamento ou atitude suas são coisa de gente normal. É uma dúvida muito mais comum do que vocês possam imaginar.",
-    image: "/images/blog/coisa-de-gente-normal.webp",
+    image: "/images/blog/pessoas-atipicas.webp",
     tag: "PSICOLOGIA SOCIAL",
     mdx: `
 Você pode já ter se perguntado se um comportamento ou atitude suas são coisa de gente normal. É uma dúvida muito mais comum do que vocês possam imaginar.
