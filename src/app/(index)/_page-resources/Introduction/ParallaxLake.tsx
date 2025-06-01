@@ -29,7 +29,7 @@ export default function ParallaxLake() {
       alt="Lago background"
       width={690}
       height={664}
-      className="right-0 top-16 mt-12 h-full max-h-[780px] rounded-t-[56px] bg-cover bg-bottom object-cover md:absolute md:max-w-[45%] lg:top-0 lg:mt-32 lg:rounded-tl-[56px]"
+      className="right-0 top-16 mt-12 h-full max-h-[780px] rounded-t-[56px] bg-cover bg-bottom object-cover md:absolute md:max-w-[45%] lg:top-0  lg:mt-32 lg:rounded-tl-[56px] lg:rounded-tr-none"
     />
   );
 }
