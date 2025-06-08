@@ -24,14 +24,14 @@ const PreviousAndNextArticles = (props: Pick<TNextPageProps, "params">) => {
     const nextArticle = articlesData[currArticleIndex + 1];
 
     return (
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full flex-col justify-between gap-4 md:flex-row md:items-center">
         <div className="flex w-full max-w-[285px] flex-col gap-2">
           <CustomLink disabled={!previousArticle} href={"/blog/artigos/" + previousArticle?.slug} stylization={{ variant: "secondary" }} className="w-full">
             Anterior
           </CustomLink>
           <p className="line-clamp-1 text-sm text-neutral-500">{previousArticle?.title || "Nenhum artigo anterior"}</p>
         </div>
-        <div className="flex w-full max-w-[285px] flex-col items-end justify-end gap-2">
+        <div className="flex w-full max-w-[285px] flex-col justify-end gap-2 md:items-end">
           <CustomLink disabled={!nextArticle} href={"/blog/artigos/" + nextArticle?.slug} stylization={{ variant: "secondary" }} className="w-full">
             Próximo
           </CustomLink>

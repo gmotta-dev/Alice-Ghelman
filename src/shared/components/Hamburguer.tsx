@@ -10,7 +10,7 @@ export const Hamburguer: FC<{ expandNav: boolean; setExpandNav: (expandNav: bool
       className={`${expandNav ? "gap-[6px]" : "gap-[3px]"} group mx-3 flex h-[15px] w-[18px] flex-col items-center justify-center ${className}`}
       onClick={() => setExpandNav(!expandNav)}>
       {spans.map((i, key) => (
-        <span key={key} className={`h-[3px] w-full bg-nandor-700  transition-all duration-300 group-hover:bg-nandor-600 ${i}`} />
+        <span key={key} className={`h-[3px] w-full bg-nandor-300  transition-all duration-300 group-hover:bg-nandor-400 ${i}`} />
       ))}
       <span className="sr-only">Abrir menu</span>
     </button>
