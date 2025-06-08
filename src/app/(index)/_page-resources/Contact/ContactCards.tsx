@@ -23,14 +23,21 @@ export default function ContactCards() {
       <Card
         element="div"
         icon={Location}
-        texts={["Rua Desembargador Izidro nº 18, Tijuca, Rio de Janeiro", "Rua Mem de Sá, 34, Icaraí, Niterói"]}
         className="w-full rounded-b-[32px] rounded-t-xl bg-loafer-300 text-loafer-700"
+        texts={[
+          "Rua Desembargador Izidro nº 18, Tijuca, Rio de Janeiro",
+          <>
+            Rua Mem de Sá nº 34,
+            <br className="md:hidden" />
+            Icaraí, Niterói
+          </>,
+        ]}
       />
     </ul>
   );
 }
 
-type TCardProps = { icon: React.ElementType; texts: string[]; className?: string } & ({ element: "div" } | { element: "link"; href: string });
+type TCardProps = { icon: React.ElementType; texts: React.ReactNode[]; className?: string } & ({ element: "div" } | { element: "link"; href: string });
 
 const Card = ({ element, icon: Icon, texts, ...props }: TCardProps) => {
   const Element = element === "div" ? "div" : "a";
@@ -38,8 +45,8 @@ const Card = ({ element, icon: Icon, texts, ...props }: TCardProps) => {
   return (
     <Element {...props} className={twMerge("flex flex-col gap-2 px-9 py-6 transition-all duration-300", props.className)}>
       <Icon className="h-8 w-8 lg:h-12 lg:w-12" />
-      {texts.map((text) => (
-        <p key={text} className="lg:text-xl">
+      {texts.map((text, index) => (
+        <p key={index} className="lg:text-xl">
           {text}
         </p>
       ))}
