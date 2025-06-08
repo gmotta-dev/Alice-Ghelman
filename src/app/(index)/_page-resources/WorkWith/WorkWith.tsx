@@ -49,7 +49,7 @@ const cardsConfig: TCard[] = [
     children: <MiddleCardPlants className="pointer-events-none absolute inset-0" />,
     content: [
       "Atendo crianças típicas e atípicas a partir de dois anos de idade no consultório presencial e a partir de seis anos na modalidade online. ",
-      "Os atendimentos com crianças envolve sessões com os responsáveis que podem ser individuais ou em conjunto.",
+      "O atendimento com criança envolve sessões com os responsáveis que podem ser individuais ou em conjunto.",
       "Qualquer dúvida entre em contato comigo!",
     ],
   },

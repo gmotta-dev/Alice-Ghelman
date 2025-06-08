@@ -23,7 +23,7 @@ export default function ContactCards() {
       <Card
         element="div"
         icon={Location}
-        texts={["Rua Desembargador Izidro nº 18, Tijuca, Rio de Janeiro", "Rua Doutor Borman n⁰ 23, Centro, Niterói"]}
+        texts={["Rua Desembargador Izidro nº 18, Tijuca, Rio de Janeiro", "Rua Mem de Sá, 34, Icaraí, Niterói"]}
         className="w-full rounded-b-[32px] rounded-t-xl bg-loafer-300 text-loafer-700"
       />
     </ul>

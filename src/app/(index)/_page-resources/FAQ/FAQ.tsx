@@ -28,7 +28,7 @@ export default function FAQ() {
 
           <Expandable
             title="As sessões online são feitas por meio de qual plataforma? "
-            text="As sessões online costumam ser feitas através da plataforma do Google Meet e o link para acessá-lo é enviado sempre na hora da sessão. Caso não seja possível ou acessível as sessões tambem podem ser feitas através da vídeo chamada do WhatsApp.  "
+            text="As sessões online costumam ser feitas através da plataforma do Google Meet e o link para acessá-lo é enviado sempre na hora da sessão. Caso não seja possível ou acessível as sessões também podem ser feitas através da videochamada do WhatsApp.  "
             icon={<Grid className="h-6 w-6" />}
           />
         </div>

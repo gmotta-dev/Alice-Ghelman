@@ -9,7 +9,6 @@ export default function BlogArticles() {
   return (
     <ContentWrapper id="blog" element="section" className="mt-32 flex flex-col">
       <Title>Artigos do Blog</Title>
-      <p className="mt-4 text-nandor-800">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
       <ArticleGroup classNames={{ container: "mt-6" }} articles={articlesData.slice(0, 3)} />
       <CustomLink href="/blog" className="mx-auto mt-14 w-full max-w-[385px]" stylization={{ variant: "secondary" }}>
         Ver todos os artigos
