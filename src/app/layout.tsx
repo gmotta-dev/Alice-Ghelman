@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Heebo, Inter, Poppins } from "next/font/google";
 
 import "./globals.css";
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${poppins.variable} ${heebo.variable} ${inter.variable} font-heebo antialiased`}>
+        <Analytics />
         <ToastProvider>
           <PopUpProvider>
             <Nav />

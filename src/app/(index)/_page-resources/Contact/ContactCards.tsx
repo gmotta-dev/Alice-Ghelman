@@ -27,8 +27,7 @@ export default function ContactCards() {
         texts={[
           "Rua Desembargador Izidro nº 18, Tijuca, Rio de Janeiro",
           <>
-            Rua Mem de Sá nº 34,
-            <br className="md:hidden" />
+            Rua Mem de Sá nº 34, <br className="md:hidden" />
             Icaraí, Niterói
           </>,
         ]}

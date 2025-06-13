@@ -11,7 +11,7 @@ export default function ArticleGroup(props: { classNames?: Partial<Record<"conta
   const article3 = props.articles[2];
 
   return (
-    <div className={`flex flex-col items-center gap-6 md:flex-row ${props.classNames?.container}`}>
+    <div className={`flex flex-col gap-6 md:flex-row ${props.classNames?.container}`}>
       {article1 && (
         <Article image={article1.image} title={article1.title_lg} link={"/blog/artigos/" + article1.slug} stylization={{ orientation: "portrait" }} tag={article1.tag} />
       )}
